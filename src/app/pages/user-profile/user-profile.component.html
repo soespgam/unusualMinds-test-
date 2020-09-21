@@ -2,34 +2,30 @@
 <div class="row containerppal">
   <div class="col-12">
 
-    <div class="row">
+    <div class="row container2">
       <div class="col-4">
-
         <div class="row">
-          <div class="col-12" style="background: brown; height: 200px">
-            <img
-              src="../../../assets/images/userphoto.svg" class="imgContainer2 offset-3"/>
+          <div class="col-12 contImg2">
+            <img src="../../../assets/images/user.svg" class="imgContainer2 offset-1" />
           </div>
         </div>
         <div class="row">
-          <div class="col-6" style="background: blue; height: 100px">
-        <app-button></app-button>
-            </div>
-          <div class="col-6" style="background: red; height: 100px">
-            <app-button></app-button>
-        </div>
+          <div class="col-6">
+            <app-button [datoButton]="datoButton" (valorButton)="goPost()"></app-button>
+          </div>
+          <div class="col-6">
+            <app-button [datoButton]="datoButton2" (valorButton)="goToDo()"></app-button>
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <app-datos-user></app-datos-user>
+      <div class="col-6 cont4">
+        <app-datos-user *ngIf="datoE" [dato1]="user"></app-datos-user>
       </div>
     </div>
-
     <!-- Fin primera seccion -->
     <div class="row">
       <div class="col-12 ">
-        <h1>GALERIA</h1>
-        <app-photo></app-photo>
+        <app-photo *ngIf="photoE" [datoAlbum]="photo"></app-photo>
       </div>
     </div>
   </div>

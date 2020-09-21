@@ -1,0 +1,18 @@
+.contTask{
+    margin: 25px;
+}
+
+.contenedor:hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.contenedor {overflow:hidden;}
+
+.card-header{
+    background: #49274A;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-body{
+    border-color: #49274A 3px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}

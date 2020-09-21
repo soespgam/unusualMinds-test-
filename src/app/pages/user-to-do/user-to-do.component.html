@@ -1,1 +1,5 @@
-<p>user-to-do works!</p>
+<app-navbar></app-navbar>
+<div class="row cont">
+    <h1 class="tittle offset-5">TO DO</h1>
+    <app-task *ngIf="taskE" [datoTask]="task"></app-task>
+</div>

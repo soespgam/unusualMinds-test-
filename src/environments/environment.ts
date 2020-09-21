@@ -7,10 +7,17 @@ export const environment = {
   endpoints:{
     user:"https://jsonplaceholder.typicode.com/users/1",
     users:"https://jsonplaceholder.typicode.com/users",
+
     post:"https://jsonplaceholder.typicode.com/posts/",
+    comments:"https://jsonplaceholder.typicode.com/posts/1/comments",
+    
     toDo:"https://jsonplaceholder.typicode.com/users/1/todos",
+    
     photos:"https://jsonplaceholder.typicode.com/albums/1/photos",
-    albums:"https://jsonplaceholder.typicode.com/users/1/albums"
+    albums:"https://jsonplaceholder.typicode.com/users/1/albums",
+
+    newComment:"https://jsonplaceholder.typicode.com/posts"
+    
   }
 };
 

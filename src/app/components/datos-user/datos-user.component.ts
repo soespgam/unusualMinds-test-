@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-datos-user',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./datos-user.component.scss']
 })
 export class DatosUserComponent implements OnInit {
+
+  @Input() dato1:any;  
 
   constructor() { }
 

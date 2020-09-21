@@ -1,0 +1,17 @@
+<app-form-comment (enviaDato)="ver($event)" (buttonAction)="emitButton()"></app-form-comment>
+<div class="row" >
+    <div class="card offset-3 col-6 container2" *ngFor="let comments of datoComment">
+        <div class="row no-gutters" >
+            <div class="col-md-4">
+                <img src="../../../assets/images/userComment.svg" class="card-img img">
+            </div>
+            <div class="col-md-8 conText">
+                <div class="card-body">
+                    <p class="card-text">{{comments.body}}</p>
+                    <h5 class="card-text">{{comments.name}}</h5>
+                    <p class="card-text"><small class="text-muted">{{comments.email}}</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="row" >
+    <div class="card offset-3 col-6 container2">
+        <div class="row no-gutters" >
+            <div class="col-md-4">
+                <img src="../../../assets/images/userComment.svg" class="card-img img">
+            </div>
+            <div class="col-md-8 conText">
+                <div class="card-body">
+                    <input type="text" class="form-control" placeholder="body"  [(ngModel)]="datoBody" (keyup)="changeForm()">
+                    <input type="text" class="form-control" placeholder="name"  [(ngModel)]="datoName" (keyup)="changeForm()">
+                    <input type="text" class="form-control" placeholder="email" [(ngModel)]="datoEmail" (keyup)="changeForm()">
+                    <button (click)="enviaDatosForm()" class="boton offset-7 boton2">Crear Nuevo Comentario</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

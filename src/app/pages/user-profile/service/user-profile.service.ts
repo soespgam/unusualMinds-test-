@@ -34,6 +34,29 @@ export class UserProfileService {
     });
   }
 
+  getPhoto(){
+    return new Promise((resolve,reject)=>{
+      this.http.get(environment.endpoints.photos).subscribe(
+        result=>{
+          resolve(result);
+        },
+        err=>{
+          reject(err)
+        });
+    });
+  }
+
+  getAlbum(){
+    return new Promise((resolve,reject)=>{
+      this.http.get(environment.endpoints.albums).subscribe(
+        result=>{
+          resolve(result);
+        },
+        err=>{
+          reject(err)
+        });
+    });
+  }
 
 
 

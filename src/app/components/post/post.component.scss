@@ -1,0 +1,31 @@
+.button{
+    background: #49274A;
+    color:white;
+}
+
+.cont{
+    background: #94618E;
+    border: 4px dashed #49274A ;
+    padding: 10px;
+    margin: 5px;
+    text-align: justify;
+    //width: 510px;
+    height: 240px;
+    //box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.card-text{
+    color: white;
+}
+
+.card{
+    background:#49274A;
+    margin: 6px;    
+    border-radius: 14px;
+}
+
+.card:hover {filter: grayscale(80%);}
+
+.parrafo{
+    height: 110px;
+}

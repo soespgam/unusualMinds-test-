@@ -1,0 +1,15 @@
+<div class="row" >
+  <div class="col-4" *ngFor="let datoPost of datoPost">
+    <div class="card">
+      <div class="card-body cont">
+          <h5 class="card-title">{{datoPost.title}}</h5>
+          <p class="card-text">{{datoPost.body}}</p>
+          
+      </div>
+      <button class="btn button" (click)="goPost()">ver comentarios</button>
+    </div>
+  </div>
+</div>
+
+
+
